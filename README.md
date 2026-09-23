@@ -2,15 +2,12 @@
 
 > **Final Project for Fundamentals of Information Technology 2 (FIT2)**  
 > **Author:** Rion Kurihara (Policy Management, 1st Year)  
-> **Engine / Language:** [Pyxel](https://github.com/kitao/pyxel) (Retro Game Engine for Python) | Python 3  
 
 ---
 
 ## 📌 Project Overview
 
-**Run Rabbit Run** is a 2D pixel-art arcade survival game developed as the final project for the **Fundamentals of Information Technology 2 (FIT2)** course. The primary focus of the class was mastering core Python programming fundamentals—such as Object-Oriented Programming (OOP), mathematical calculations, state management, and event loops—by building interactive retro games with **Pyxel**.
-
-In *Run Rabbit Run*, the player controls a quick-witted rabbit attempting to evade chasing foxes across increasingly challenging environments.
+**Run Rabbit Run** is a 2D pixel-art arcade survival game developed as the final project for the **Fundamentals of Information Technology 2 (FIT2)** course. The primary focus of the class was mastering core Python programming fundamentals such as state management and event loops by building interactive retro games with **Pyxel**.
 
 ---
 
@@ -74,10 +71,6 @@ Unlike standard arena games with static screen-wrapping, player wrapping is gate
 * Obstacle positions and sprite variations (4 unique designs) are generated randomly per round using `random.randint()`.
 * Implements distance validation (`abs(obstacle - player_start) >= min_distance (20px)`) to guarantee the rabbit never spawns trapped inside or adjacent to obstacles.
 
-### 5. 🏗️ Robust Object-Oriented Architecture & State Machine
-* Clean separation of concerns with entity classes (`Player`, `Enemy`, `Button`, `Obstacle`) managing coordinate state and design parameters.
-* Finite State Machine (`"start"` → `"playing"` → `"end"`) cleanly governing game loop updates, input handlers, frame timer conversions (60 FPS → 30 seconds), and conditional rendering routines.
-
 ---
 
 ## 🛠️ Code Architecture
@@ -116,10 +109,3 @@ python "run.rabbit.run copy.py"
 ```
 
 *(Note: Ensure `IMAGES.pyxres` is present in the same working directory for custom pixel art assets to load properly.)*
-
----
-
-## 🏫 Class Context
-
-Developed for **Fundamentals of Information Technology 2 (FIT2)**  
-*Final Project Presentation & Design Document by Rion Kurihara (ID: 72335117)
